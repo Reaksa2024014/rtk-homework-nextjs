@@ -1,4 +1,3 @@
-
 import { createSlice } from "@reduxjs/toolkit";
 
 
@@ -12,17 +11,17 @@ export const countSlice = createSlice({
     name:'count',
     initialState: initializeValue,
     reducers:{
-        increment: (state, action) =>{
-            const incrementValue = action.payload;
-            //update state when increment value has action from payload
-            const value =  incrementValue !== undefined?
-action.payload : 1;
+        increment: (state) =>{
+//             const incrementValue = action.payload;
+//             //update state when increment value has action from payload
+//             const value =  incrementValue !== undefined?
+// action.payload : 1;
 
-            state.value += value;
+            state.value += 1;
         },
-        decrement: (state, action) =>{
-            const decrementValue = action.payload;
-            state.value -= decrementValue;
+        decrement: (state) =>{
+            // const decrementValue = action.payload;
+            state.value -= 1;
         },
         resetValue: (state) => {
             state.value = 0;

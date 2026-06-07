@@ -34,3 +34,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+When should we use rtk? and rtk query?
+1. rtk
+    a. utilities (createSlice, configureStore)
+    => local state (without using side-effects like api, database, ...)
+    => when if refresh of page it will disappear
+    => count, addToCart, functionalities
+    => using storage (client-side: session, localstorage, cookies), we can use with auth(authentication/authorization)
+2. rtk-query : 
+    a. utilites (createApi, fetchBaseQuery)
+    create => /products (authentication)
+    => work with side-effect(middleware like working with api)
+    => abstract process background on fetching data from api
+    => custom hook (useCustomHookQuery/Mutation)
+    => caching (provideTage, tags, ...)
+
+```
