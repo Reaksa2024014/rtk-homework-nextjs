@@ -1,5 +1,3 @@
-
-
 export type ProductTypes ={
     uuid: string,
     thumbnail: string,
@@ -9,8 +7,9 @@ export type ProductTypes ={
 
 }
 
-
 //need to copy types from website
 export type CreateProductTypes = {
     name: string
 }
+
+

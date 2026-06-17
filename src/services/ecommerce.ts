@@ -1,7 +1,5 @@
-
 import { CreateProductTypes, ProductTypes } from "@/lib/products";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
-
 
 export const ecommerceApi= createApi({
   reducerPath : 'ecommerceApi',

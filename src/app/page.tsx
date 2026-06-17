@@ -1,6 +1,7 @@
 import ButtonComponent from "@/components/ButtonComponent";
 import CartIcon from "@/components/CartIcon";
 import GetCountComponent from "@/components/GetCountComponent";
+import { ProductTable } from "@/components/products/product-table";
 
 
 
@@ -11,6 +12,7 @@ export default function Home() {
       <ButtonComponent/>
       <GetCountComponent/>
       <CartIcon/>
+      <ProductTable />
     </div>
 
     // <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
